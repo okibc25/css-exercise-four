@@ -12,83 +12,83 @@ h1 {
   font-family: 'Questrial';
 }
 
-.container h1{
+.container > h1{
 border: 10px;
 padding: 15px;
 margin: 15px;
 }
 
-.h1 span:first-of-type {
-  text-align: center;
+.preview > h1 {
+  /*background-color: #dadada;*/
+font-size: 2.4em;
+padding: 10%;
+text-align: left;
 }
 
-section.container .preview.baku {
+/*view for mobile devices*/
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.preview {
+  /*background-color: #dadada;*/
+  height: 300px;
+  margin: 2em 0;
+  width: 100%;
+}
+
+.baku {
   background-image:url(../../images/baku.jpg);
-  display: inline-block;
-
-  width: 220px;
-  height: 220px;
-  background-repeat:no-repeat;
   background-size:cover;
-  border: 15px;
-  padding: 15px;
-  margin: 15px;
+  background-position: left;
 }
 
 
-section.container .preview.london {
+.london {
   background-image:url(../../images/london.png);
-  display:inline-block;
-  width: 220px;
-  height: 220px;
-  background-repeat:no-repeat;
   background-size:cover;
-  border: 15px;
-  padding: 15px;
-  margin: 15px;
+  background-position: left;
 }
 
-section.container .preview.madrid {
+.madrid {
   background-image:url(../../images/madrid.jpg);
-  display:inline-block;
-  width: 220px;
-  height: 220px;
-  background-repeat:no-repeat;
   background-size:cover;
-  border: 15px;
-  padding: 15px;
-  margin: 15px;
+  background-position: left;
 }
 
-section.container .preview.rome {
+.rome {
   background-image:url(../../images/rome.jpg);
-  display:inline-block;
-  width: 220px;
-  height: 220px;
-  background-repeat:no-repeat;
   background-size:cover;
-  border: 15px;
-  padding: 15px;
-  margin: 15px;
+  background-position:left;
 }
 
-/*Width for Desktop*/
-@media screen and (min-width-width: 1199px) {
-  body {
-    background color: #333;
-  }
 
 /*Width for Tablets*/
-@media screen and (min-width: 575px) {
-  body {
-    background color: #333;
+@media screen and (min-width: 600px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
 }
-
-/*Width for large smartphones*/
-@@media screen and (min-width: 375px;) {
-div {
-  margin: 1%;
-  width: 48%
+ .preview {
+   background-size: cover;
+   float: left;
+   height: 200px;
+   margin: 1% 1%;
+   width: 48%;
+ }
 }
+/*Width for Desktop*/
+@media screen and (min-width-width: 900px) {
+  .container {
+      width: 70%;
+    }
 
+  .preview {
+    background-size: cover;
+    float: left;
+    height: 200px;
+    margin: 2em 1%;
+    width: 23%;
+  }
 }
